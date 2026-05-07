@@ -1,0 +1,33 @@
+@use "./variables" as var;
+
+@mixin flexCenter() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin fontStyle(
+    $color: var.$heading-color,
+    $size: var.$content-size,
+    $weight: var.$heading-weight
+) {
+    font-size: $size;
+    color: $color;
+    font-weight: $weight;
+}
+
+@mixin styleH2 {
+    @include fontStyle(var.$heading-color, var.$heading2-size);
+}
+
+@mixin styleH3 {
+    @include fontStyle(var.$heading-color, var.$heading3-size);
+}
+
+@mixin styleContent {
+    @include fontStyle(
+        var.$content-color,
+        var.$content-size,
+        var.$content-weight
+    );
+}

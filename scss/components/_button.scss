@@ -1,0 +1,19 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as func;
+
+.btn {
+    width: 157px;
+    max-width: 157px;
+    line-height: 64px;
+    padding: 0 18px;
+    border-radius: 8px;
+    background: var.$tertiary-color;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    @include func.fontStyle(white, var.$content-size, var.$btn-weight);
+
+    &.btn-dark {
+        background: var.$heading-color;
+    }
+}
