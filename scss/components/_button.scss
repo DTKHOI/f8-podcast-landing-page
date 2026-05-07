@@ -2,9 +2,11 @@
 @use "../abstracts/mixins" as func;
 
 .btn {
+    --btn-height: 64px;
+
     width: 157px;
     max-width: 157px;
-    line-height: 64px;
+    line-height: var(--btn-height);
     padding: 0 18px;
     border-radius: 8px;
     background: var.$tertiary-color;

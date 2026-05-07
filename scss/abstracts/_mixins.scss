@@ -16,18 +16,32 @@
     font-weight: $weight;
 }
 
-@mixin styleH2 {
-    @include fontStyle(var.$heading-color, var.$heading2-size);
+@mixin styleHeading($type) {
+    @if $type == "h2" {
+        @include fontStyle(var.$heading2-size);
+    } @else if $type == "h3" {
+        @include fontStyle(var.$heading3-size);
+    }
 }
 
-@mixin styleH3 {
-    @include fontStyle(var.$heading-color, var.$heading3-size);
-}
-
-@mixin styleContent {
-    @include fontStyle(
-        var.$content-color,
-        var.$content-size,
-        var.$content-weight
-    );
+@mixin styleContent($type: "normal") {
+    @if $type == "md" {
+        @include fontStyle(
+            var.$content-color,
+            var.$md-content-size,
+            var.$content-weight
+        );
+    } @else if $type == "sm" {
+        @include fontStyle(
+            var.$content-color,
+            var.$sm-content-size,
+            var.$content-weight
+        );
+    } @else {
+        @include fontStyle(
+            var.$content-color,
+            var.$content-size,
+            var.$content-weight
+        );
+    }
 }

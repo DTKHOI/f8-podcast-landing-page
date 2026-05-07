@@ -143,6 +143,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background: #fff8f3;
+}
+
 input,
 textarea {
   font-size: inherit;
@@ -1082,9 +1086,10 @@ a {
   }
 }
 .btn {
+  --btn-height: 64px;
   width: 157px;
   max-width: 157px;
-  line-height: 64px;
+  line-height: var(--btn-height);
   padding: 0 18px;
   border-radius: 8px;
   background: #936cdd;
@@ -1097,6 +1102,49 @@ a {
 }
 .btn.btn-dark {
   background: #201830;
+}
+
+.header {
+  padding: 42px 0 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: -8px;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+.header__sign-up {
+  width: 116px;
+  max-width: 116px;
+  --btn-height: 48px;
+}
+.header__log-in {
+  font-size: 1.6rem;
+  color: #665f73;
+  font-weight: 400;
+}
+
+.navbar {
+  display: flex;
+}
+.navbar__link {
+  padding: 8px 24px;
+  font-size: 1.6rem;
+  color: #665f73;
+  font-weight: 400;
+}
+.navbar__link:hover::after {
+  content: url(../../assets/icon/dropdown.svg);
+  margin-left: 7px;
 }
 
 /*# sourceMappingURL=main.css.map */
