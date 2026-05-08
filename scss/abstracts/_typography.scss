@@ -58,12 +58,15 @@ blockquote {
 
 .btn1 {
     @extend .p1;
+    font-weight: var.$btn-weight;
 }
 
 .btn2 {
     @extend .p2;
+    font-weight: var.$btn-weight;
 }
 
 .btn3 {
     @extend .p2;
+    font-weight: var.$btn-weight;
 }

@@ -205,18 +205,6 @@
         font-weight: 600;
     }
 
-    &__play-wrapper {
-        width: 18px;
-        height: 18px;
-        background: var.$heading-color;
-        border-radius: 50%;
-        @include func.flexCenter;
-    }
-
-    &__play--dark {
-        transform: translateX(10%);
-    }
-
     &__highlight {
         position: relative;
         display: inline-block;

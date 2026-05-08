@@ -16,7 +16,7 @@
     &__btn {
         margin-top: 36px;
         @include func.flexCenter;
-        justify-content: space-evenly;
+        gap: 8px;
     }
 
     &__media {
@@ -43,6 +43,7 @@
 
     &__app-icon {
         &--soundcloud {
+            margin-left: 41px;
             margin-top: 3px;
         }
 

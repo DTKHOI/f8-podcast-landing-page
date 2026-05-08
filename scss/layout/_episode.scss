@@ -39,12 +39,31 @@
         margin-top: 84px;
     }
 
+    &__item {
+        cursor: pointer;
+
+        &:hover {
+            .btn3 {
+                color: var.$tertiary-color;
+            }
+
+            .play-circle-dark {
+                background: var.$tertiary-color;
+            }
+        }
+    }
+
+    .btn3,
+    .play-circle-dark {
+        transition: 0.2s;
+    }
+
     &__item--reverse {
         flex-direction: row-reverse;
     }
 
     &__img {
-        width: 270px;
+        width: 100%;
     }
 
     &__info {
@@ -61,7 +80,9 @@
     }
 
     &__cta {
-        display: block;
+        display: flex;
+        align-items: center;
+        gap: 6px;
         margin-top: 11px;
     }
 
