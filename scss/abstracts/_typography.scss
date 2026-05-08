@@ -1,0 +1,68 @@
+@use "./variables" as var;
+@use "./mixins" as func;
+
+a {
+    color: var.$content-color;
+}
+
+// Heading
+h1,
+h2,
+h3 {
+    font-weight: var.$heading-weight;
+    color: var.$heading-color;
+}
+
+h1 {
+    font-size: var.$heading1-size;
+    line-height: var.$heading1-height;
+}
+
+h2 {
+    font-size: var.$heading2-size;
+    line-height: var.$heading2-height;
+}
+
+h3 {
+    font-size: var.$heading3-size;
+    line-height: var.$heading3-height;
+}
+
+// content
+p {
+    color: var.$content-color;
+    font-weight: var.$content-weight;
+}
+
+.p1 {
+    font-size: var.$content-size;
+    line-height: var.$content-height;
+}
+
+.p2 {
+    font-size: var.$md-content-size;
+    line-height: var.$md-content-height;
+}
+
+.p3 {
+    font-size: var.$sm-content-size;
+    line-height: var.$sm-content-height;
+}
+
+// Button
+.btn {
+    color: white;
+    font-weight: var.$btn-weight;
+}
+
+.btn1 {
+    @extend .p1;
+}
+
+.btn2 {
+    @extend .p2;
+}
+
+.btn1 {
+    @extend .p2;
+}

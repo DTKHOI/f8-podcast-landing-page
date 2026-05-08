@@ -6,6 +6,10 @@
     justify-content: center;
 }
 
+@mixin textCenter {
+    text-align: center;
+}
+
 @mixin fontStyle(
     $color: var.$heading-color,
     $size: var.$content-size,
@@ -16,14 +20,6 @@
     font-weight: $weight;
     line-height: $height;
     color: $color;
-}
-
-@mixin styleHeading($type) {
-    @if $type == "h2" {
-        @include fontStyle(var.$heading2-size, var.$heading2-height);
-    } @else if $type == "h3" {
-        @include fontStyle(var.$heading3-size, var.$heading3-height);
-    }
 }
 
 @mixin styleContent($type: "normal") {

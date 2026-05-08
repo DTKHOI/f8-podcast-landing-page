@@ -175,14 +175,12 @@
         &-heading {
             width: 470px;
             margin-left: inherit;
-            @include func.fontStyle(var.$heading-color, 7rem, 700, 1.14);
         }
 
         &-desc {
             width: 470px;
             margin-top: 20px;
             margin-left: inherit;
-            @include func.styleContent();
         }
     }
 

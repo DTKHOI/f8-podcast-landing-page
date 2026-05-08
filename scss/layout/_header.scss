@@ -37,7 +37,6 @@
 
     &__link {
         padding: 8px 24px;
-        @include func.styleContent(md);
     }
 
     &__link:hover {

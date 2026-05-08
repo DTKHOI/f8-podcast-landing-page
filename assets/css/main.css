@@ -1092,6 +1092,57 @@ a {
     --grid-gutter-y: 90px;
   }
 }
+a {
+  color: #665f73;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  color: #201830;
+}
+
+h1 {
+  font-size: 7rem;
+  line-height: 1.14;
+}
+
+h2 {
+  font-size: 4.2rem;
+  line-height: 1.24;
+}
+
+h3 {
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+p {
+  color: #665f73;
+  font-weight: 400;
+}
+
+.p1, .btn1 {
+  font-size: 1.8rem;
+  line-height: 1.67;
+}
+
+.p2, .btn1, .btn2 {
+  font-size: 1.6rem;
+  line-height: 1.75;
+}
+
+.p3 {
+  font-size: 1.4rem;
+  line-height: 1.71;
+}
+
+.btn {
+  color: white;
+  font-weight: 600;
+}
+
 .btn {
   --btn-height: 64px;
   width: 157px;
@@ -1102,10 +1153,7 @@ a {
   text-align: center;
   cursor: pointer;
   display: inline-block;
-  font-size: 1.8rem;
-  font-weight: 600;
   line-height: var(--btn-height);
-  color: white;
 }
 .btn.btn-dark {
   background: #201830;
@@ -1148,10 +1196,6 @@ a {
 }
 .navbar__link {
   padding: 8px 24px;
-  font-size: 1.6rem;
-  font-weight: 400;
-  line-height: 1.75;
-  color: #665f73;
 }
 .navbar__link:hover::after {
   content: url(../../assets/icon/dropdown.svg);
@@ -1323,19 +1367,11 @@ a {
 .hero__content-heading {
   width: 470px;
   margin-left: inherit;
-  font-size: 7rem;
-  font-weight: 700;
-  line-height: 1.14;
-  color: #201830;
 }
 .hero__content-desc {
   width: 470px;
   margin-top: 20px;
   margin-left: inherit;
-  font-size: 1.8rem;
-  font-weight: 400;
-  line-height: 1.67;
-  color: #665f73;
 }
 .hero__actions {
   margin-top: 40px;
