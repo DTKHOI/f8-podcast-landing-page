@@ -216,4 +216,23 @@
     &__play--dark {
         transform: translateX(10%);
     }
+
+    &__highlight {
+        position: relative;
+        display: inline-block;
+        z-index: 0;
+
+        &::after {
+            content: "";
+            display: inline-block;
+            background: url(../../assets/img/smile-shape.png);
+            width: 100%;
+            height: 57%;
+            top: 45px;
+            left: 4px;
+            z-index: -1;
+            position: absolute;
+            background-size: contain;
+        }
+    }
 }

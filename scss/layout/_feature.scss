@@ -1,3 +1,5 @@
+@use "../abstracts/mixins" as func;
+
 .feature {
     margin-top: 160px;
     background: white;
@@ -5,5 +7,89 @@
     &__desc {
         margin: 18px auto 0;
         width: 470px;
+    }
+
+    &__highlight {
+        position: relative;
+        display: inline-block;
+        z-index: 0;
+
+        &::after {
+            content: "";
+            background: url(../../assets/img/about__smile.svg);
+            width: 104%;
+            height: 34px;
+            position: absolute;
+            z-index: -1;
+            bottom: -15px;
+            left: -5px;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__catergory {
+        margin-top: 70px;
+    }
+
+    &__card {
+        position: relative;
+        border-radius: 8px;
+        overflow: hidden;
+
+        &--small {
+            height: 285px;
+        }
+
+        &--medium {
+            height: 285px;
+        }
+
+        &--large {
+            height: 600px;
+        }
+
+        &-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        &-overlay {
+            width: 100%;
+            padding: 16px 24px;
+            backdrop-filter: blur(10px);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        &-top {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        &-title {
+            color: white;
+        }
+
+        &-wrapper {
+            width: 14px;
+            height: 14px;
+            border: 1.2px solid white;
+            border-radius: 50%;
+            @include func.flexCenter;
+        }
+
+        &-label {
+            color: white;
+        }
+    }
+
+    &__bottom {
+        margin-top: 70px;
+        display: flex;
+        justify-content: center;
     }
 }

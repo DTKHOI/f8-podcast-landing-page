@@ -72,4 +72,21 @@
             right: 18px;
         }
     }
+
+    &__highlight {
+        display: inline-block;
+        position: relative;
+        z-index: 0;
+
+        &::after {
+            content: "";
+            background: url(../../assets/img/about__smile.svg);
+            width: 107%;
+            height: 38px;
+            position: absolute;
+            z-index: -1;
+            top: 23px;
+            left: -6px;
+        }
+    }
 }
