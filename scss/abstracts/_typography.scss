@@ -29,7 +29,8 @@ h3 {
 }
 
 // content
-p {
+p,
+blockquote {
     color: var.$content-color;
     font-weight: var.$content-weight;
 }

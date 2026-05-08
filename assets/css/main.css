@@ -1131,7 +1131,8 @@ h3 {
   line-height: 1.5;
 }
 
-p {
+p,
+blockquote {
   color: #665f73;
   font-weight: 400;
 }
@@ -1684,6 +1685,63 @@ p {
   margin-top: 55px;
   display: flex;
   justify-content: center;
+}
+
+.testimonial {
+  margin-top: 168px;
+}
+.testimonial__img-group {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.testimonial__img {
+  border-radius: 8px;
+  object-fit: cover;
+}
+.testimonial__img--large {
+  width: 370px;
+  height: 444px;
+  position: relative;
+  z-index: -1;
+  right: 70px;
+}
+.testimonial__img--small {
+  width: 270px;
+  height: 284px;
+}
+.testimonial__tabs {
+  position: absolute;
+  left: 74px;
+  bottom: 4px;
+}
+.testimonial__highlight {
+  position: relative;
+  display: inline-block;
+  z-index: 0;
+}
+.testimonial__highlight::after {
+  content: "";
+  background: url(../../assets/img/about__smile.svg);
+  width: 104%;
+  height: 34px;
+  position: absolute;
+  z-index: -1;
+  bottom: -15px;
+  left: -5px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.testimonial__heading {
+  margin-top: 18px;
+}
+.testimonial__desc {
+  margin-top: 38px;
+}
+.testimonial__name {
+  display: block;
+  margin-top: 18px;
+  color: #aba6b5;
 }
 
 /*# sourceMappingURL=main.css.map */
