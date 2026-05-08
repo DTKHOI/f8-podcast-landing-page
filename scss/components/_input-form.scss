@@ -1,0 +1,19 @@
+@use "../abstracts/mixins" as func;
+@use "../abstracts/variables" as var;
+@use "../abstracts/typography" as typo;
+
+input[type="email"],
+input[type="text"] {
+    display: block;
+    width: 100%;
+    padding: 18px 28px;
+    border-radius: 8px;
+    background: #2b213f;
+    border: none;
+    color: #aba6b5;
+    @extend .p2;
+
+    &:focus {
+        outline: none;
+    }
+}

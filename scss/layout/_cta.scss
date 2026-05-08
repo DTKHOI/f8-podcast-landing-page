@@ -1,0 +1,23 @@
+@use "../abstracts/mixins" as func;
+@use "../abstracts/variables" as var;
+
+.cta {
+    margin-top: 160px;
+
+    &__main-content {
+        padding: 100px 0;
+        background: var.$heading-color;
+    }
+
+    &__heading {
+        color: white;
+    }
+
+    &__desc {
+        width: 470px;
+    }
+
+    &__form {
+        margin-top: 88px;
+    }
+}

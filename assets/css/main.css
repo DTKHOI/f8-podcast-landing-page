@@ -1142,7 +1142,8 @@ blockquote {
   line-height: 1.67;
 }
 
-.p2, .btn3, .btn2 {
+.p2, input[type=email],
+input[type=text], .btn3, .btn2 {
   font-size: 1.6rem;
   line-height: 1.75;
 }
@@ -1203,6 +1204,21 @@ blockquote {
 .tab-row__tab:hover {
   transform: scale(1.3);
   background: #936cdd;
+}
+
+input[type=email],
+input[type=text] {
+  display: block;
+  width: 100%;
+  padding: 18px 28px;
+  border-radius: 8px;
+  background: #2b213f;
+  border: none;
+  color: #aba6b5;
+}
+input[type=email]:focus,
+input[type=text]:focus {
+  outline: none;
 }
 
 .header {
@@ -1742,6 +1758,23 @@ blockquote {
   display: block;
   margin-top: 18px;
   color: #aba6b5;
+}
+
+.cta {
+  margin-top: 160px;
+}
+.cta__main-content {
+  padding: 100px 0;
+  background: #201830;
+}
+.cta__heading {
+  color: white;
+}
+.cta__desc {
+  width: 470px;
+}
+.cta__form {
+  margin-top: 88px;
 }
 
 /*# sourceMappingURL=main.css.map */
