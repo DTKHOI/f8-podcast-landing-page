@@ -1,10 +1,13 @@
 @use "../abstracts/mixins" as func;
+@use "../abstracts/variables" as var;
 
 .header {
-    padding: 42px 0 12px;
+    background: var.$primary-color;
+    padding: 42px 0 10px;
     @include func.flexCenter();
     position: sticky;
-    top: -8px;
+    top: -32px;
+    z-index: 2;
 
     &__inner {
         display: flex;

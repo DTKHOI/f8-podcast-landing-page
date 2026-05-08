@@ -15,9 +15,16 @@ body {
 }
 
 input,
-textarea {
+textarea,
+button {
     font-size: inherit;
     font-family: inherit;
+}
+
+button {
+    background: transparent;
+    outline: none;
+    border: none;
 }
 
 a {

@@ -1,0 +1,219 @@
+@use "../abstracts/mixins" as func;
+@use "../abstracts/variables" as var;
+
+.hero {
+    margin-top: 100px;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__bg-left {
+        position: relative;
+        z-index: 0;
+    }
+
+    &__bg-left {
+        width: 270px;
+        height: 302px;
+        background: #eeaa87;
+        border-radius: 8px;
+        position: relative;
+        z-index: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__img-left {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__music {
+        width: 194px;
+        padding: 17px 21px;
+        border-radius: 9px;
+        background: white;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: -30px;
+        box-shadow: 0 12px 44px 0 rgba(32, 24, 48, 0.07);
+
+        &-play {
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            border: 1px solid var.$tertiary-color;
+            cursor: pointer;
+            @include func.flexCenter;
+        }
+    }
+
+    &__listener {
+        margin-top: 53px;
+
+        &-title {
+            @include func.styleButton;
+        }
+
+        &-row {
+            margin-top: 10px;
+            margin-left: 18px;
+            display: flex;
+        }
+
+        &-bg {
+            width: 48px;
+            height: 48px;
+            border: 2px solid #fff;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-left: -18px;
+        }
+
+        &-bg:last-child {
+            background: var.$heading-color;
+            @include func.flexCenter;
+            @include func.fontStyle(#fff, 1.2rem, 600, 2.2);
+        }
+
+        &-avt {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__bg-right {
+        @extend .hero__bg-left;
+        margin-top: 28px;
+        background: #70a05b;
+    }
+
+    &__img-right {
+        @extend .hero__img-left;
+        border-radius: inherit;
+    }
+
+    &__bubble {
+        width: 82px;
+        height: 82px;
+        border-radius: 50%;
+        margin: 8px 0 12px 118px;
+        background: var.$secondary-color;
+        @include func.flexCenter;
+        flex-direction: column;
+
+        &-title {
+            @include func.fontStyle(white, 1.4rem, 800);
+        }
+
+        &-desc {
+            margin-top: 4px;
+            @include func.fontStyle(white, 1rem, 500);
+        }
+    }
+
+    &__brand {
+        display: flex;
+        gap: 18px;
+    }
+
+    &__meida-right {
+        position: relative;
+    }
+
+    &__decor {
+        position: absolute;
+
+        &--left {
+            top: 50px;
+            left: 70px;
+        }
+
+        &--right {
+            top: 110px;
+            right: 106px;
+        }
+    }
+
+    &__label {
+        width: 194px;
+        padding: 14px 50px;
+        border-radius: 9px;
+        background: rgba(255, 255, 255, 0.4);
+        box-shadow: 0 12px 44px 0 rgba(0, 0, 0, 0.07);
+        backdrop-filter: blur(5px);
+        position: absolute;
+        bottom: 16px;
+
+        &-name {
+            display: block;
+            text-align: center;
+            @include func.styleButton();
+        }
+
+        &-job {
+            display: block;
+            text-align: center;
+            margin-top: 6px;
+
+            @include func.fontStyle(
+                var.$content-color,
+                1.2rem,
+                var.$content-weight
+            );
+        }
+    }
+
+    &__content {
+        &-heading {
+            width: 470px;
+            margin-left: inherit;
+            @include func.fontStyle(var.$heading-color, 7rem, 700, 1.14);
+        }
+
+        &-desc {
+            width: 470px;
+            margin-top: 20px;
+            margin-left: inherit;
+            @include func.styleContent();
+        }
+    }
+
+    &__actions {
+        margin-top: 40px;
+        margin-left: inherit;
+        display: flex;
+        align-items: center;
+        gap: 28px;
+    }
+
+    &__cta {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    &__more {
+        @include func.styleContent;
+        font-weight: 600;
+    }
+
+    &__play-wrapper {
+        width: 18px;
+        height: 18px;
+        background: var.$heading-color;
+        border-radius: 50%;
+        @include func.flexCenter;
+    }
+
+    &__play--dark {
+        transform: translateX(10%);
+    }
+}

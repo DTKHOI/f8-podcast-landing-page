@@ -9,18 +9,20 @@
 @mixin fontStyle(
     $color: var.$heading-color,
     $size: var.$content-size,
-    $weight: var.$heading-weight
+    $weight: var.$heading-weight,
+    $height: 1
 ) {
     font-size: $size;
-    color: $color;
     font-weight: $weight;
+    line-height: $height;
+    color: $color;
 }
 
 @mixin styleHeading($type) {
     @if $type == "h2" {
-        @include fontStyle(var.$heading2-size);
+        @include fontStyle(var.$heading2-size, var.$heading2-height);
     } @else if $type == "h3" {
-        @include fontStyle(var.$heading3-size);
+        @include fontStyle(var.$heading3-size, var.$heading3-height);
     }
 }
 
@@ -29,19 +31,30 @@
         @include fontStyle(
             var.$content-color,
             var.$md-content-size,
-            var.$content-weight
+            var.$content-weight,
+            var.$md-content-height
         );
     } @else if $type == "sm" {
         @include fontStyle(
             var.$content-color,
             var.$sm-content-size,
-            var.$content-weight
+            var.$content-weight,
+            var.$sm-content-height
         );
     } @else {
         @include fontStyle(
             var.$content-color,
             var.$content-size,
-            var.$content-weight
+            var.$content-weight,
+            var.$content-height
         );
     }
+}
+
+@mixin styleButton {
+    @include fontStyle(
+        var.$heading-color,
+        var.$sm-content-size,
+        var.$btn-weight
+    );
 }
