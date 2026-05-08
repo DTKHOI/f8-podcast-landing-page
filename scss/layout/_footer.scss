@@ -1,0 +1,66 @@
+@use "../abstracts/mixins" as func;
+@use "../abstracts/variables" as var;
+
+.footer {
+    background: var.$primary-color;
+    padding: 100px 0 38px;
+
+    &__inner {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        justify-content: space-between;
+    }
+
+    &__copyright {
+        margin-top: 14px;
+        width: 270px;
+    }
+
+    &__socials {
+        display: flex;
+        gap: 14px;
+    }
+
+    &__bg {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background: var.$heading-color;
+        margin-top: 18px;
+        @include func.flexCenter;
+        transition: 0.2s;
+
+        &:hover {
+            background: var.$tertiary-color;
+        }
+    }
+
+    &__nav {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-evenly;
+    }
+
+    &__list {
+        margin-top: 24px;
+    }
+
+    &__link {
+        display: block;
+        margin-top: 16px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__brand-row {
+        margin-top: 24px;
+        display: flex;
+        gap: 16px;
+    }
+
+    &__brand {
+        width: 36px;
+    }
+}

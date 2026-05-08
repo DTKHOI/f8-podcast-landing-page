@@ -9,6 +9,10 @@
         background: var.$heading-color;
     }
 
+    &__main-content {
+        position: relative;
+    }
+
     &__heading {
         color: white;
     }
@@ -19,5 +23,28 @@
 
     &__form {
         margin-top: 88px;
+    }
+
+    &__star {
+        position: absolute;
+        &1 {
+            left: 35px;
+            bottom: 45px;
+        }
+
+        &2 {
+            top: 180px;
+            right: 27px;
+            filter: brightness(0) saturate(100%) invert(68%) sepia(49%)
+                saturate(1151%) hue-rotate(323deg) brightness(101%)
+                contrast(101%);
+        }
+
+        &3 {
+            top: 26px;
+            left: 528px;
+            filter: brightness(0) saturate(100%) invert(88%) sepia(14%)
+                saturate(5547%) hue-rotate(95deg) brightness(88%) contrast(66%);
+        }
     }
 }

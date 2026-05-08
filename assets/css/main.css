@@ -1703,8 +1703,13 @@ input[type=text]:focus {
   justify-content: center;
 }
 
+.main {
+  overflow-x: hidden;
+}
+
 .testimonial {
   margin-top: 168px;
+  position: relative;
 }
 .testimonial__img-group {
   display: flex;
@@ -1759,6 +1764,17 @@ input[type=text]:focus {
   margin-top: 18px;
   color: #aba6b5;
 }
+.testimonial__circle {
+  position: absolute;
+  top: 0;
+  right: -300px;
+  width: 287px;
+  height: 287px;
+  border-radius: 287px;
+  opacity: 0.4;
+  background: #ff9051;
+  filter: blur(129px);
+}
 
 .cta {
   margin-top: 160px;
@@ -1766,6 +1782,9 @@ input[type=text]:focus {
 .cta__main-content {
   padding: 100px 0;
   background: #201830;
+}
+.cta__main-content {
+  position: relative;
 }
 .cta__heading {
   color: white;
@@ -1775,6 +1794,78 @@ input[type=text]:focus {
 }
 .cta__form {
   margin-top: 88px;
+}
+.cta__star {
+  position: absolute;
+}
+.cta__star1 {
+  left: 35px;
+  bottom: 45px;
+}
+.cta__star2 {
+  top: 180px;
+  right: 27px;
+  filter: brightness(0) saturate(100%) invert(68%) sepia(49%) saturate(1151%) hue-rotate(323deg) brightness(101%) contrast(101%);
+}
+.cta__star3 {
+  top: 26px;
+  left: 528px;
+  filter: brightness(0) saturate(100%) invert(88%) sepia(14%) saturate(5547%) hue-rotate(95deg) brightness(88%) contrast(66%);
+}
+
+.footer {
+  background: #fff8f3;
+  padding: 100px 0 38px;
+}
+.footer__inner {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  justify-content: space-between;
+}
+.footer__copyright {
+  margin-top: 14px;
+  width: 270px;
+}
+.footer__socials {
+  display: flex;
+  gap: 14px;
+}
+.footer__bg {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #201830;
+  margin-top: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
+}
+.footer__bg:hover {
+  background: #936cdd;
+}
+.footer__nav {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-evenly;
+}
+.footer__list {
+  margin-top: 24px;
+}
+.footer__link {
+  display: block;
+  margin-top: 16px;
+}
+.footer__link:hover {
+  text-decoration: underline;
+}
+.footer__brand-row {
+  margin-top: 24px;
+  display: flex;
+  gap: 16px;
+}
+.footer__brand {
+  width: 36px;
 }
 
 /*# sourceMappingURL=main.css.map */

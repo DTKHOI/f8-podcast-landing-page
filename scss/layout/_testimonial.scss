@@ -1,8 +1,13 @@
 @use "../abstracts/mixins" as func;
 @use "../abstracts/variables" as var;
 
+.main {
+    overflow-x: hidden;
+}
+
 .testimonial {
     margin-top: 168px;
+    position: relative;
 
     &__img-group {
         display: flex;
@@ -65,5 +70,17 @@
         display: block;
         margin-top: 18px;
         color: #aba6b5;
+    }
+
+    &__circle {
+        position: absolute;
+        top: 0;
+        right: -300px;
+        width: 287px;
+        height: 287px;
+        border-radius: 287px;
+        opacity: 0.4;
+        background: var.$secondary-color;
+        filter: blur(129px);
     }
 }
