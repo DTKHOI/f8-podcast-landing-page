@@ -1,0 +1,73 @@
+@use "../abstracts/mixins" as func;
+@use "../abstracts/variables" as var;
+
+.episode {
+    background: var.$primary-color;
+    margin-top: 160px;
+    padding: 100px 0;
+
+    &__heading {
+        width: 390px;
+    }
+
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__highlight {
+        position: relative;
+        display: inline-block;
+        z-index: 0;
+
+        &::after {
+            content: "";
+            background: url(../../assets/img/about__smile.svg);
+            width: 104%;
+            height: 34px;
+            position: absolute;
+            z-index: -1;
+            bottom: -15px;
+            left: -5px;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__list {
+        margin-top: 84px;
+    }
+
+    &__item--reverse {
+        flex-direction: row-reverse;
+    }
+
+    &__img {
+        width: 270px;
+    }
+
+    &__info {
+        color: var.$secondary-color;
+    }
+
+    &__title {
+        margin-top: 6px;
+        width: 270px;
+    }
+
+    &__desc {
+        margin-top: 18px;
+    }
+
+    &__cta {
+        display: block;
+        margin-top: 11px;
+    }
+
+    &__bottom {
+        margin-top: 55px;
+        display: flex;
+        justify-content: center;
+    }
+}

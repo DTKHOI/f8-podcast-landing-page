@@ -1189,6 +1189,21 @@ p {
   transform: translateX(15%);
 }
 
+.tab-row {
+  display: flex;
+  gap: 12px;
+}
+.tab-row__tab {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #d8d5de;
+}
+.tab-row__tab:hover {
+  transform: scale(1.3);
+  background: #936cdd;
+}
+
 .header {
   background: #fff8f3;
   padding: 42px 0 10px;
@@ -1608,6 +1623,65 @@ p {
 }
 .feature__bottom {
   margin-top: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+.episode {
+  background: #fff8f3;
+  margin-top: 160px;
+  padding: 100px 0;
+}
+.episode__heading {
+  width: 390px;
+}
+.episode__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.episode__highlight {
+  position: relative;
+  display: inline-block;
+  z-index: 0;
+}
+.episode__highlight::after {
+  content: "";
+  background: url(../../assets/img/about__smile.svg);
+  width: 104%;
+  height: 34px;
+  position: absolute;
+  z-index: -1;
+  bottom: -15px;
+  left: -5px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.episode__list {
+  margin-top: 84px;
+}
+.episode__item--reverse {
+  flex-direction: row-reverse;
+}
+.episode__img {
+  width: 270px;
+}
+.episode__info {
+  color: #ff9051;
+}
+.episode__title {
+  margin-top: 6px;
+  width: 270px;
+}
+.episode__desc {
+  margin-top: 18px;
+}
+.episode__cta {
+  display: block;
+  margin-top: 11px;
+}
+.episode__bottom {
+  margin-top: 55px;
   display: flex;
   justify-content: center;
 }

@@ -1,0 +1,19 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as func;
+
+.tab-row {
+    display: flex;
+    gap: 12px;
+
+    &__tab {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #d8d5de;
+
+        &:hover {
+            transform: scale(1.3);
+            background: var.$tertiary-color;
+        }
+    }
+}
