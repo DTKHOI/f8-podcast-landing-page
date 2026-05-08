@@ -2,7 +2,9 @@
 @use "../abstracts/variables" as var;
 
 .hero {
-    margin-top: 100px;
+    padding-top: 100px;
+    padding-bottom: 140px;
+    background: var.$primary-color;
 
     &__inner {
         display: flex;

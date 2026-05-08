@@ -1,0 +1,18 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as func;
+
+.play-circle {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: white;
+    @include func.flexCenter;
+
+    &.play-circle-dark {
+        background: var.$heading-color;
+    }
+}
+
+.play-icon {
+    transform: translateX(15%);
+}

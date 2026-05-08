@@ -144,7 +144,8 @@ html {
 }
 
 body {
-  background: #fff8f3;
+  background: white;
+  height: 10000px;
 }
 
 input,
@@ -162,6 +163,18 @@ button {
 
 a {
   text-decoration: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.align-item-center {
+  align-items: center;
+}
+
+.justify-sb {
+  justify-content: space-between;
 }
 
 .col, .row[class*=row-cols-] > *,
@@ -1159,6 +1172,23 @@ p {
   background: #201830;
 }
 
+.play-circle {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.play-circle.play-circle-dark {
+  background: #201830;
+}
+
+.play-icon {
+  transform: translateX(15%);
+}
+
 .header {
   background: #fff8f3;
   padding: 42px 0 10px;
@@ -1203,7 +1233,9 @@ p {
 }
 
 .hero {
-  margin-top: 100px;
+  padding-top: 100px;
+  padding-bottom: 140px;
+  background: #fff8f3;
 }
 .hero__inner {
   display: flex;
@@ -1403,6 +1435,77 @@ p {
 }
 .hero__play--dark {
   transform: translateX(10%);
+}
+
+.about {
+  background: white;
+  padding-top: 160px;
+}
+.about__title {
+  width: 470px;
+}
+.about__desc {
+  margin-top: 18px;
+}
+.about__btn {
+  margin-top: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+.about__media {
+  position: relative;
+  z-index: 0;
+  display: flex;
+  align-items: flex-start;
+  margin-top: 45px;
+  margin-bottom: 56px;
+}
+.about__media-img {
+  width: 100%;
+}
+.about__circle-blur {
+  width: 287px;
+  height: 287px;
+  border-radius: 50%;
+  opacity: 0.4;
+  background: #ff9051;
+  filter: blur(129px);
+}
+.about__app-icon--soundcloud {
+  margin-top: 3px;
+}
+.about__app-icon--pocket {
+  margin-top: 108px;
+  margin-right: 62px;
+}
+.about__app-icon--apple {
+  position: absolute;
+  width: 148px;
+  top: -45px;
+  right: 38.4%;
+}
+.about__app-icon--spotify {
+  position: absolute;
+  width: 126px;
+  bottom: -56px;
+  left: 169px;
+}
+.about__app-icon--google {
+  position: absolute;
+  width: 138px;
+  bottom: -16px;
+  right: 18px;
+}
+
+.feature {
+  margin-top: 160px;
+  background: white;
+}
+.feature__desc {
+  margin: 18px auto 0;
+  width: 470px;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,75 @@
+@use "../abstracts/mixins" as func;
+@use "../abstracts/variables" as var;
+
+.about {
+    background: white;
+    padding-top: 160px;
+
+    &__title {
+        width: 470px;
+    }
+
+    &__desc {
+        margin-top: 18px;
+    }
+
+    &__btn {
+        margin-top: 36px;
+        @include func.flexCenter;
+        justify-content: space-evenly;
+    }
+
+    &__media {
+        position: relative;
+        z-index: 0;
+        display: flex;
+        align-items: flex-start;
+        margin-top: 45px;
+        margin-bottom: 56px;
+
+        &-img {
+            width: 100%;
+        }
+    }
+
+    &__circle-blur {
+        width: 287px;
+        height: 287px;
+        border-radius: 50%;
+        opacity: 0.4;
+        background: #ff9051;
+        filter: blur(129px);
+    }
+
+    &__app-icon {
+        &--soundcloud {
+            margin-top: 3px;
+        }
+
+        &--pocket {
+            margin-top: 108px;
+            margin-right: 62px;
+        }
+
+        &--apple {
+            position: absolute;
+            width: 148px;
+            top: -45px;
+            right: 38.4%;
+        }
+
+        &--spotify {
+            position: absolute;
+            width: 126px;
+            bottom: -56px;
+            left: 169px;
+        }
+
+        &--google {
+            position: absolute;
+            width: 138px;
+            bottom: -16px;
+            right: 18px;
+        }
+    }
+}

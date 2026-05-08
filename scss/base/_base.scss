@@ -11,7 +11,8 @@ html {
 }
 
 body {
-    background: var.$primary-color;
+    background: white;
+    height: 10000px;
 }
 
 input,
@@ -29,4 +30,16 @@ button {
 
 a {
     text-decoration: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.align-item-center {
+    align-items: center;
+}
+
+.justify-sb {
+    justify-content: space-between;
 }
