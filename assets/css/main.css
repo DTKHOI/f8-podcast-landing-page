@@ -1446,16 +1446,15 @@ input[type=text]:focus {
 }
 .hero__content-heading {
   width: 470px;
-  margin-left: inherit;
+  margin-left: auto;
 }
 .hero__content-desc {
   width: 470px;
   margin-top: 20px;
-  margin-left: inherit;
+  margin-left: auto;
 }
 .hero__actions {
   margin-top: 40px;
-  margin-left: inherit;
   display: flex;
   align-items: center;
   gap: 28px;
@@ -1527,7 +1526,7 @@ input[type=text]:focus {
   filter: blur(129px);
 }
 .about__app-icon--soundcloud {
-  margin-left: 41px;
+  margin-left: auto;
   margin-top: 3px;
 }
 .about__app-icon--pocket {

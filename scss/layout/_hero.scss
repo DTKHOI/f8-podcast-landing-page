@@ -176,19 +176,18 @@
     &__content {
         &-heading {
             width: 470px;
-            margin-left: inherit;
+            margin-left: auto;
         }
 
         &-desc {
             width: 470px;
             margin-top: 20px;
-            margin-left: inherit;
+            margin-left: auto;
         }
     }
 
     &__actions {
         margin-top: 40px;
-        margin-left: inherit;
         display: flex;
         align-items: center;
         gap: 28px;
