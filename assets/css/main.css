@@ -1895,4 +1895,82 @@ input[type=text]:focus {
   width: 36px;
 }
 
+@media screen and (min-width: 992px) {
+  .hide-pc {
+    display: none;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .hide-mobile {
+    display: none;
+  }
+  .menu-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.4s;
+  }
+  .menu-drawer {
+    position: fixed;
+    inset: 0 65% 0 0%;
+    background: white;
+    z-index: 2;
+    transform: translateX(-100%);
+    transition: all 0.4s;
+    overflow-y: hidden;
+  }
+  .menu-content {
+    padding: 20px;
+  }
+  .menu-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .menu-close {
+    width: 30px;
+  }
+  .menu-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 40px;
+  }
+  .menu-link {
+    display: flex;
+  }
+  .menu-actions {
+    margin-top: 295px;
+    display: flex;
+    justify-content: center;
+  }
+  .menu-btn {
+    width: 100%;
+    --btn-height: 54px;
+  }
+  .header {
+    padding-top: 20px;
+  }
+  .header__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .header__menu-line {
+    width: 18px;
+    height: 2px;
+    background: #61594f;
+  }
+  #mobile-menu:checked ~ .menu-overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+  #mobile-menu:checked ~ .menu-drawer {
+    transform: translateX(0);
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
