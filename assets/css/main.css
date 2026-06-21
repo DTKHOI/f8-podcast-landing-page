@@ -1916,6 +1916,15 @@ input[type=text]:focus {
   .flex-no-wrap {
     flex-wrap: nowrap;
   }
+  .padding-0 {
+    padding: 0 !important;
+  }
+  .gap-12 {
+    gap: 12px;
+  }
+  .mt-6 {
+    margin-top: 6px;
+  }
   .menu-overlay {
     position: fixed;
     inset: 0;
@@ -2242,6 +2251,41 @@ input[type=text]:focus {
     gap: 5px;
     left: 40px;
     bottom: 0;
+  }
+  .cta {
+    margin-top: 100px;
+    padding: 50px 0;
+    background: #201830;
+    border-radius: 12px;
+  }
+  .cta__main-content {
+    padding: 0;
+  }
+  .cta__heading {
+    font-size: 2.6rem;
+    width: 100%;
+    line-height: 1.38;
+  }
+  .cta__desc {
+    margin-top: 12px;
+    font-size: 1.4rem;
+    width: 100%;
+    line-height: 1.71;
+  }
+  .cta__form {
+    margin-top: 38px;
+  }
+  .cta__star1 {
+    bottom: 16px;
+    left: 283px;
+  }
+  .cta__star2 {
+    top: 405px;
+    right: 115px;
+  }
+  .cta__star3 {
+    left: 300px;
+    top: 425px;
   }
 }
 

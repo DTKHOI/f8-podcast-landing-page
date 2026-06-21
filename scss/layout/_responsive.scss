@@ -30,6 +30,18 @@
         flex-wrap: nowrap;
     }
 
+    .padding-0 {
+        padding: 0 !important;
+    }
+
+    .gap-12 {
+        gap: 12px;
+    }
+
+    .mt-6 {
+        margin-top: 6px;
+    }
+
     .menu {
         &-overlay {
             position: fixed;
@@ -452,6 +464,49 @@
             gap: 5px;
             left: 40px;
             bottom: 0;
+        }
+    }
+
+    .cta {
+        margin-top: 100px;
+        padding: 50px 0;
+        background: var.$heading-color;
+        border-radius: 12px;
+
+        &__main-content {
+            padding: 0;
+        }
+
+        &__heading {
+            font-size: var.$mobile-heading2-size;
+            width: 100%;
+            line-height: var.$mobile-height1;
+        }
+
+        &__desc {
+            margin-top: 12px;
+            font-size: var.$sm-content-size;
+            width: 100%;
+            line-height: var.$sm-content-height;
+        }
+
+        &__form {
+            margin-top: 38px;
+        }
+
+        &__star1 {
+            bottom: 16px;
+            left: 283px;
+        }
+
+        &__star2 {
+            top: 405px;
+            right: 115px;
+        }
+
+        &__star3 {
+            left: 300px;
+            top: 425px;
         }
     }
 }
