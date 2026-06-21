@@ -1,7 +1,7 @@
 @use "../abstracts/mixins" as func;
 
 .feature {
-    margin-top: 160px;
+    padding-top: 160px;
     background: white;
 
     &__desc {

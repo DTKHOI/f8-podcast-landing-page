@@ -1568,7 +1568,7 @@ input[type=text]:focus {
 }
 
 .feature {
-  margin-top: 160px;
+  padding-top: 160px;
   background: white;
 }
 .feature__desc {
@@ -1907,6 +1907,12 @@ input[type=text]:focus {
   .order-top {
     order: -1;
   }
+  .align-item-center {
+    align-items: center;
+  }
+  .justify-center {
+    justify-content: center;
+  }
   .menu-overlay {
     position: fixed;
     inset: 0;
@@ -2127,6 +2133,40 @@ input[type=text]:focus {
   }
   .about__btn {
     margin-top: 28px;
+  }
+  .feature {
+    padding-top: 100px;
+  }
+  .feature__heading {
+    font-size: 2.6rem;
+    width: 100%;
+    line-height: 1.38;
+  }
+  .feature__highlight::after {
+    left: -1px;
+  }
+  .feature__desc {
+    width: 100%;
+    margin-top: 12px;
+    font-size: 1.4rem;
+    line-height: 1.71;
+  }
+  .feature__catergory {
+    margin-top: 38px;
+  }
+  .feature__card--large {
+    height: 550px;
+  }
+  .feature__card--medium {
+    height: 205px;
+  }
+  .feature__card--small {
+    width: 270px;
+    height: 285px;
+    margin: 0 auto;
+  }
+  .feature__bottom {
+    margin-top: 38px;
   }
 }
 
