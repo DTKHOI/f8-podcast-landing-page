@@ -365,7 +365,7 @@
 
     .episode {
         margin-top: 100px;
-        padding-top: 70px;
+        padding: 70px 0;
 
         &__heading {
             font-size: var.$mobile-heading2-size;
@@ -413,6 +413,45 @@
 
         &__more {
             margin-top: 38px;
+        }
+    }
+
+    .testimonial {
+        margin-top: 100px;
+
+        &__heading {
+            font-size: var.$mobile-heading2-size;
+            width: 100%;
+            line-height: var.$mobile-height1;
+        }
+
+        &__desc {
+            font-size: var.$sm-content-size;
+            width: 100%;
+            line-height: var.$sm-content-height;
+        }
+
+        &__media {
+            margin-top: 28px;
+        }
+
+        &__img {
+            &--small {
+                width: 160px;
+                height: 168px;
+            }
+
+            &--large {
+                width: 218px;
+                height: 262px;
+                right: 40px;
+            }
+        }
+
+        &__tabs {
+            gap: 5px;
+            left: 40px;
+            bottom: 0;
         }
     }
 }
