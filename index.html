@@ -619,16 +619,20 @@
                             <strong class="episode__highlight">popular</strong>
                             episodes
                         </h2>
-                        <button class="btn btn-dark btn1 episode__btn">
+                        <button
+                            class="btn btn-dark btn1 episode__btn hide-mobile"
+                        >
                             All episodes
                         </button>
                     </div>
 
                     <div class="episode__list">
-                        <div class="row row-cols-lg-2 row-cols-1 g-lg-3">
+                        <div
+                            class="row row-cols-lg-2 row-cols-1 g-lg-3 flex-no-wrap"
+                        >
                             <div class="col">
                                 <article
-                                    class="episode__item align-item-center row row-cols-lg-2 row-cols-1"
+                                    class="episode__item align-item-center row row-cols-lg-2 row-cols-2"
                                 >
                                     <figure class="episode__media col">
                                         <img
@@ -650,14 +654,16 @@
                                             is...it depends.
                                         </p>
                                         <div class="episode__cta">
-                                            <span class="btn3">Listen now</span>
+                                            <span class="btn3 episode__btn"
+                                                >Listen now</span
+                                            >
                                             <div
-                                                class="play-circle play-circle-dark"
+                                                class="play-circle play-circle-dark episode__play-icon"
                                             >
                                                 <img
                                                     src="./assets/icon/play-white.svg"
                                                     alt=""
-                                                    class="play-icon"
+                                                    class="play-icon episode__icon-play"
                                                 />
                                             </div>
                                         </div>
@@ -666,7 +672,7 @@
                             </div>
                             <div class="col">
                                 <article
-                                    class="episode__item align-item-center row row-cols-lg-2 row-cols-1"
+                                    class="episode__item align-item-center row row-cols-lg-2 row-cols-2"
                                 >
                                     <figure class="episode__media col">
                                         <img
@@ -688,14 +694,16 @@
                                             is...it depends.
                                         </p>
                                         <div class="episode__cta">
-                                            <span class="btn3">Listen now</span>
+                                            <span class="btn3 episode__btn"
+                                                >Listen now</span
+                                            >
                                             <div
-                                                class="play-circle play-circle-dark"
+                                                class="play-circle play-circle-dark episode__play-icon"
                                             >
                                                 <img
                                                     src="./assets/icon/play-white.svg"
                                                     alt=""
-                                                    class="play-icon"
+                                                    class="play-icon episode__icon-play"
                                                 />
                                             </div>
                                         </div>
@@ -704,7 +712,7 @@
                             </div>
                             <div class="col">
                                 <article
-                                    class="episode__item episode__item--reverse align-item-center row row-cols-lg-2 row-cols-1"
+                                    class="episode__item episode__item--reverse align-item-center row row-cols-lg-2 row-cols-2"
                                 >
                                     <figure class="episode__media col">
                                         <img
@@ -726,14 +734,16 @@
                                             is...it depends.
                                         </p>
                                         <div class="episode__cta">
-                                            <span class="btn3">Listen now</span>
+                                            <span class="btn3 episode__btn"
+                                                >Listen now</span
+                                            >
                                             <div
-                                                class="play-circle play-circle-dark"
+                                                class="play-circle play-circle-dark episode__play-icon"
                                             >
                                                 <img
                                                     src="./assets/icon/play-white.svg"
                                                     alt=""
-                                                    class="play-icon"
+                                                    class="play-icon episode__icon-play"
                                                 />
                                             </div>
                                         </div>
@@ -742,7 +752,7 @@
                             </div>
                             <div class="col">
                                 <article
-                                    class="episode__item episode__item--reverse align-item-center row row-cols-lg-2 row-cols-1"
+                                    class="episode__item episode__item--reverse align-item-center row row-cols-lg-2 row-cols-2"
                                 >
                                     <figure class="episode__media col">
                                         <img
@@ -764,14 +774,16 @@
                                             is...it depends.
                                         </p>
                                         <div class="episode__cta">
-                                            <span class="btn3">Listen now</span>
+                                            <span class="btn3 episode__btn"
+                                                >Listen now</span
+                                            >
                                             <div
-                                                class="play-circle play-circle-dark"
+                                                class="play-circle play-circle-dark episode__play-icon"
                                             >
                                                 <img
                                                     src="./assets/icon/play-white.svg"
                                                     alt=""
-                                                    class="play-icon"
+                                                    class="play-icon episode__icon-play"
                                                 />
                                             </div>
                                         </div>
@@ -792,6 +804,10 @@
                             <label for="tab2" class="tab-row__tab"></label>
                         </div>
                     </div>
+
+                    <button class="btn btn-dark btn1 episode__more hide-pc">
+                        All episodes
+                    </button>
                 </div>
             </section>
 

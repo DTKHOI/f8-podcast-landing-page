@@ -1913,6 +1913,9 @@ input[type=text]:focus {
   .justify-center {
     justify-content: center;
   }
+  .flex-no-wrap {
+    flex-wrap: nowrap;
+  }
   .menu-overlay {
     position: fixed;
     inset: 0;
@@ -2166,6 +2169,48 @@ input[type=text]:focus {
     margin: 0 auto;
   }
   .feature__bottom {
+    margin-top: 38px;
+  }
+  .episode {
+    margin-top: 100px;
+    padding-top: 70px;
+  }
+  .episode__heading {
+    font-size: 2.6rem;
+    width: 99%;
+    line-height: 1.38;
+  }
+  .episode__list {
+    margin-top: 38px;
+  }
+  .episode__info {
+    font-size: 1rem;
+  }
+  .episode__title {
+    font-size: 1.2rem;
+    width: 100%;
+  }
+  .episode__desc {
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+  .episode__btn {
+    font-size: 1rem;
+  }
+  .episode__play-icon {
+    width: 10px;
+    height: 10px;
+  }
+  .episode__icon-play {
+    width: 4px;
+    height: 4px;
+    transform: translate(0, 0);
+  }
+  .episode__bottom {
+    margin-top: 18px;
+  }
+  .episode__more {
     margin-top: 38px;
   }
 }
