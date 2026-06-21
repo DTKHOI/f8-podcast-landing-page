@@ -145,6 +145,7 @@ html {
 
 body {
   background: #fdfdfd;
+  overflow-x: hidden;
 }
 
 input,
@@ -1283,6 +1284,7 @@ input[type=text]:focus {
   padding-top: 100px;
   padding-bottom: 140px;
   background: #fff8f3;
+  overflow: hidden;
 }
 .hero__inner {
   display: flex;
