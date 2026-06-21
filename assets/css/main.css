@@ -144,7 +144,7 @@ html {
 }
 
 body {
-  background: white;
+  background: #fdfdfd;
   height: 10000px;
 }
 
@@ -1445,7 +1445,7 @@ input[type=text]:focus {
   color: #665f73;
 }
 .hero__content-heading {
-  width: 470px;
+  width: 100%;
   margin-left: auto;
 }
 .hero__content-desc {
@@ -1970,6 +1970,112 @@ input[type=text]:focus {
   }
   #mobile-menu:checked ~ .menu-drawer {
     transform: translateX(0);
+  }
+  .hero {
+    padding: 42px 0 32px 0;
+  }
+  .hero__bg-left, .hero__bg-right {
+    width: 160.188px;
+    height: 179.173px;
+  }
+  .hero__bg-right {
+    margin-top: 16.61px;
+  }
+  .hero__music {
+    width: 115px;
+    justify-content: center;
+    padding: 10px 12.46px;
+    margin-bottom: -17.8px;
+  }
+  .hero__music-play {
+    width: 15.425px;
+    height: 15.425px;
+  }
+  .hero__music-track {
+    width: 67.635px;
+  }
+  .hero__music-icon {
+    width: 4.7463px;
+  }
+  .hero__label {
+    width: 115.098px;
+    padding: 8px 30px;
+    bottom: 10px;
+  }
+  .hero__label-name {
+    font-size: 0.8306rem;
+  }
+  .hero__label-job {
+    font-size: 0.7119rem;
+  }
+  .hero__listener {
+    margin-top: 31.44px;
+  }
+  .hero__listener-title {
+    font-size: 0.8306rem;
+  }
+  .hero__listener-row {
+    margin-top: 5px;
+    margin-left: 10px;
+  }
+  .hero__listener-bg {
+    width: 28.478px;
+    height: 28.478px;
+    margin-left: -11px;
+  }
+  .hero__listener-bg :last-child {
+    font-size: 0.7rem;
+  }
+  .hero__bubble {
+    width: 48.65px;
+    height: 48.65px;
+    margin: 8px 0 7.12px 70px;
+  }
+  .hero__bubble-title {
+    font-size: 0.8036rem;
+  }
+  .hero__bubble-desc {
+    font-size: 0.5933rem;
+  }
+  .hero__brand {
+    gap: 10.68px;
+  }
+  .hero__brand-logo {
+    width: 16.612px;
+    height: 16.612px;
+  }
+  .hero__decor {
+    width: 26.698px;
+    height: 21.68px;
+  }
+  .hero__decor--left {
+    top: 31px;
+    left: 47px;
+  }
+  .hero__decor--right {
+    top: 67px;
+    right: 50px;
+  }
+  .hero__content {
+    margin-top: 39px;
+  }
+  .hero__content-heading {
+    font-size: 3.6rem;
+  }
+  .hero__content-desc {
+    margin-top: 12px;
+    font-size: 1.4rem;
+    width: 100%;
+    line-height: 1.71;
+  }
+  .hero__highlight::after {
+    height: 47%;
+    top: 23px;
+    left: 3px;
+    background-repeat: no-repeat;
+  }
+  .hero__actions {
+    margin-top: 28px;
   }
 }
 

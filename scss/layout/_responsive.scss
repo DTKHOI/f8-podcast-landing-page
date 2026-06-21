@@ -102,4 +102,141 @@
             }
         }
     }
+
+    .hero {
+        padding: 42px 0 32px 0;
+
+        &__bg {
+            &-left,
+            &-right {
+                width: 160.188px;
+                height: 179.173px;
+            }
+
+            &-right {
+                margin-top: 16.61px;
+            }
+        }
+
+        &__music {
+            width: 115px;
+            justify-content: center;
+            padding: 10px 12.46px;
+            margin-bottom: -17.8px;
+
+            &-play {
+                width: 15.425px;
+                height: 15.425px;
+            }
+
+            &-track {
+                width: 67.635px;
+            }
+
+            &-icon {
+                width: 4.7463px;
+            }
+        }
+
+        &__label {
+            width: 115.098px;
+            padding: 8px 30px;
+            bottom: 10px;
+
+            &-name {
+                font-size: 0.8306rem;
+            }
+
+            &-job {
+                font-size: 0.7119rem;
+            }
+        }
+
+        &__listener {
+            margin-top: 31.44px;
+
+            &-title {
+                font-size: 0.8306rem;
+            }
+
+            &-row {
+                margin-top: 5px;
+                margin-left: 10px;
+            }
+
+            &-bg {
+                width: 28.478px;
+                height: 28.478px;
+                margin-left: -11px;
+
+                :last-child {
+                    font-size: 0.7rem;
+                }
+            }
+        }
+
+        &__bubble {
+            width: 48.65px;
+            height: 48.65px;
+            margin: 8px 0 7.12px 70px;
+
+            &-title {
+                font-size: 0.8036rem;
+            }
+
+            &-desc {
+                font-size: 0.5933rem;
+            }
+        }
+
+        &__brand {
+            gap: 10.68px;
+
+            &-logo {
+                width: 16.612px;
+                height: 16.612px;
+            }
+        }
+
+        &__decor {
+            width: 26.698px;
+            height: 21.68px;
+
+            &--left {
+                top: 31px;
+                left: 47px;
+            }
+
+            &--right {
+                top: 67px;
+                right: 50px;
+            }
+        }
+
+        &__content {
+            margin-top: 39px;
+
+            &-heading {
+                font-size: var.$mobile-heading1-size;
+            }
+
+            &-desc {
+                margin-top: 12px;
+                font-size: var.$sm-content-size;
+                width: 100%;
+                line-height: var.$sm-content-height;
+            }
+        }
+
+        &__highlight::after {
+            height: 47%;
+            top: 23px;
+            left: 3px;
+            background-repeat: no-repeat;
+        }
+
+        &__actions {
+            margin-top: 28px;
+        }
+    }
 }
