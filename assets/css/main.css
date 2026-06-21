@@ -1904,6 +1904,9 @@ input[type=text]:focus {
   .hide-mobile {
     display: none;
   }
+  .order-top {
+    order: -1;
+  }
   .menu-overlay {
     position: fixed;
     inset: 0;
@@ -2075,6 +2078,54 @@ input[type=text]:focus {
     background-repeat: no-repeat;
   }
   .hero__actions {
+    margin-top: 28px;
+  }
+  .about {
+    padding-top: 100px;
+  }
+  .about__circle-blur {
+    width: 176px;
+    height: 176px;
+  }
+  .about__app-icon--apple {
+    width: 89px;
+    right: 140px;
+  }
+  .about__app-icon--pocket {
+    width: 48px;
+    margin-top: 52.6px;
+  }
+  .about__app-icon--soundcloud {
+    width: 58px;
+  }
+  .about__app-icon--spotify {
+    width: 75px;
+    left: 101px;
+  }
+  .about__app-icon--google {
+    width: 82px;
+    right: 28px;
+  }
+  .about__content {
+    margin-top: 38px;
+  }
+  .about__title {
+    font-size: 2.6rem;
+    width: 100%;
+    line-height: 1.38;
+  }
+  .about__highlight::after {
+    left: 4px;
+    top: 16px;
+    background: url(../../assets/img/mobile-smile-shape.svg);
+    background-repeat: no-repeat;
+  }
+  .about__desc {
+    margin-top: 12px;
+    font-size: 1.4rem;
+    line-height: 1.71;
+  }
+  .about__btn {
     margin-top: 28px;
   }
 }

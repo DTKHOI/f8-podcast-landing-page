@@ -14,6 +14,10 @@
         display: none;
     }
 
+    .order-top {
+        order: -1;
+    }
+
     .menu {
         &-overlay {
             position: fixed;
@@ -236,6 +240,68 @@
         }
 
         &__actions {
+            margin-top: 28px;
+        }
+    }
+
+    .about {
+        padding-top: 100px;
+
+        &__circle-blur {
+            width: 176px;
+            height: 176px;
+        }
+
+        &__app-icon {
+            &--apple {
+                width: 89px;
+                right: 140px;
+            }
+
+            &--pocket {
+                width: 48px;
+                margin-top: 52.6px;
+            }
+
+            &--soundcloud {
+                width: 58px;
+            }
+
+            &--spotify {
+                width: 75px;
+                left: 101px;
+            }
+
+            &--google {
+                width: 82px;
+                right: 28px;
+            }
+        }
+
+        &__content {
+            margin-top: 38px;
+        }
+
+        &__title {
+            font-size: var.$mobile-heading2-size;
+            width: 100%;
+            line-height: var.$mobile-height1;
+        }
+
+        &__highlight::after {
+            left: 4px;
+            top: 16px;
+            background: url(../../assets/img/mobile-smile-shape.svg);
+            background-repeat: no-repeat;
+        }
+
+        &__desc {
+            margin-top: 12px;
+            font-size: var.$sm-content-size;
+            line-height: var.$sm-content-height;
+        }
+
+        &__btn {
             margin-top: 28px;
         }
     }
